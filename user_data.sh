@@ -54,4 +54,7 @@ which hash-identifier && echo "hash-identifier installed"
 
 echo 'export PATH="$PATH:/snap/bin"' >> /etc/profile
 
+wget -q https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz -O /usr/share/wordlists/rockyou.txt.gz
+cd /usr/share/wordlists/ && gunzip -k rockyou.txt.gz || true
+
 echo "=== Installation Complete ==="
